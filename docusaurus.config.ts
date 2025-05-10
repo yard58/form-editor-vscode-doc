@@ -35,16 +35,15 @@ const config: Config = {
     [
       'classic',
       {
-        docs: false;
-        blog: false;
+        docs: false,
+        blog: false,
         pages: {
             path: 'src/pages',
             routeBasePath: '/'
         },
         theme: {
           customCss: './src/css/custom.css',
-        },
-        outDir: '/docs'
+        }
       } satisfies Preset.Options,
     ],
   ],
