@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkform_editor_vscode_doc=self.webpackChunkform_editor_vscode_doc||[]).push([[9647],{8122:(e,r,s)=>{s.r(r),s.d(r,{default:()=>n});s(6540);var c=s(4164),o=s(1082),d=s(204),t=s(2831),u=s(1410),a=s(4848);function n(e){return(0,a.jsx)(o.e3,{className:(0,c.A)(d.G.wrapper.docsPages),children:(0,a.jsx)(u.A,{children:(0,t.v)(e.route.routes)})})}}}]);

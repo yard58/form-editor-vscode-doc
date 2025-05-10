@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkform_editor_vscode_doc=self.webpackChunkform_editor_vscode_doc||[]).push([[1903],{1912:o=>{o.exports=JSON.parse('{"blogBasePath":"/form-editor-vscode-doc/blog","blogTitle":"Blog","authorsListPath":"/form-editor-vscode-doc/blog/authors"}')}}]);
