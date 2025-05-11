@@ -16,14 +16,14 @@ const sidebars: SidebarsConfig = {
   // By default, Docusaurus generates a sidebar from the docs folder structure
   tutorialSidebar: [
     {
-        type: 'category',
+        type: 'doc',
         label: 'Introduction',
-        items: ['intro'],
+        id: 'index',
       },
       {
-        type: 'category',
+        type: 'doc',
         label: 'How does it work?',
-        items: ['how-does-it-work'],
+        id: 'how-does-it-work',
       },
   ],
 
