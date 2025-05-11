@@ -29,7 +29,7 @@ This example configuration says: "Every time a file named ``server.config.json``
 This example is voluntarily simple, but you can add as many associations as you want and the patterns can be any [VSCode glob pattern](https://code.visualstudio.com/docs/editor/glob-patterns).
 
 :::note
-If no ``yard58-form-editor.config.json`` file exists in the root of the current VSCode workspace, the extension issues a warning and all files are opened in a regular VSCode text editor.
+If no ``yard58-form-editor.config.json`` file exists in the root of the current VSCode workspace, the extension all files are opened in a regular VSCode text editor.
 :::
 
 The extension looks up this map to determine if the opened file matches a configured pattern.
@@ -69,20 +69,7 @@ From this description, the extension instantiates a form inside a custom VSCode 
 
 ### Putting It All Together
 
-Layout
-
-```
-flowchart TD
-  A[Open File in VSCode] --> B{Matches Pattern?}
-  B -- No --> C[Regular Editor]
-  B -- Yes --> D[Fetch/Check Schema]
-  D --> E{Schema Cached?}
-  E -- No --> F[Download & Cache]
-  E -- Yes --> G[Use Cached Schema]
-  G --> H[Parse & Render Form]
-  H --> I[User Edits]
-  I --> J[On Save: Serialize JSON]
-```
+![Flowchart](/img/opening-workflow.png)
 
 ### Next Steps
 
